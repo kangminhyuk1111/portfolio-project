@@ -1,14 +1,25 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Black Han Sans', sans-serif;
 }
-
 .wrapper {
     width: 100%;
-    height: 3000px;
-    background-color: white;
+    background-color: #222831;
 }
-
+.upbtn{
+    font-size: 60px;
+    display: inline;
+    position: fixed;
+    color:white;
+    left: 95%;
+    top: 85%;
+}
+.upbtn:hover{
+    opacity: 0.7;
+    color: gray;
+    cursor: pointer;
+}
 .header {
     width: 100%;
     height: 50px;
@@ -16,6 +27,7 @@
     justify-content: space-around;
     display: flex;
     flex-direction: row;
+    background-color: transparent;
 }
 
 .header_logo {
@@ -24,6 +36,20 @@
     font-size: 24px;
     margin-top: 5px;
     text-align: center;
+    color: white;
+}
+
+.header_logo:hover {
+    opacity: 0.7;
+    color: white;
+}
+
+.header_logo a{
+    text-decoration: none;
+    color: white;
+}
+.header_logo a:hover{
+    opacity: 0.7;
     color: white;
 }
 
@@ -42,12 +68,25 @@
     list-style: none;
     text-align: center;
     margin-top: 10px;
+    color: white;
 }
+
+.header_navbar ul li a{
+    text-decoration: none;
+    color: #EEEEEE;
+    cursor: pointer;
+}
+
+.header_navbar ul li a:hover{
+    text-decoration: none;
+    opacity: 0.7;
+}
+
 
 .information {
     width: 100%;
-    height: 500px;
-    background-color: beige;
+    height: 650px;
+    background-color: #00ADB5;
     text-align: center;
     padding-top: 150px;
     background-image: url(./img/aaaaaa.jpg);
@@ -94,13 +133,13 @@
     margin: 0 auto;
     width: 80%;
     height: 500px;
-    background-color: beige;
+    background-color: #00ADB5;
     margin-top: 50px;
 }
 
 .about_me h1 {
     margin: 0 auto;
-    width: 24%;
+    width: 26%;
     font-size: 46px;
     padding-top: 60px;
     text-align: center;
@@ -151,16 +190,16 @@
     text-align: center;
     width: 90%;
     height: 500px;
-    background-color: beige;
+    background-color: #00ADB5;
 }
 
 .skill_info h1 {
     margin: 0 auto;
-    width: 14%;
+    width: 16%;
     font-size: 46px;
     padding-top: 60px;
     text-align: center;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px #EEEEEE;
 }
 
 .skill_info h1 i {
@@ -169,14 +208,16 @@
 
 .skill_container {
     width: 90%;
-    height: 400px;
-    margin: 0 auto;
+    height: 250px;
     margin-top: 10px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .skill_flexbox {
+    margin: 0 auto;
     margin: 10px;
     margin-top: 80px;
     width: 120px;
@@ -185,6 +226,7 @@
 }
 
 .skill_flexbox img {
+    margin: 0 auto;
     width: 90%;
     height: 90%;
     overflow: hidden;
@@ -202,7 +244,17 @@
 }
 
 .skill_flexbox h3 {
+    margin: 0 auto;
     margin-top: 20px;
+}
+
+.progress{
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 90%;
+    height: 50px;
+}
+.progress-bar{
 }
 
 .link_info {
@@ -210,12 +262,12 @@
     margin-top: 30px;
     width: 90%;
     height: 600px;
-    background-color: beige;
+    background-color: #00ADB5;
 }
 
 .link_info h1 {
     margin: 0 auto;
-    width: 13%;
+    width: 15%;
     font-size: 46px;
     padding-top: 60px;
     text-align: center;
@@ -231,7 +283,7 @@
     margin-top: 30px;
     width: 80%;
     height: 400px;
-    background-color: beige;
+    background-color: #00ADB5;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -283,9 +335,9 @@
 .project_info {
     margin: 0 auto;
     margin-top: 30px;
-    width: 100%;
+    width: 90%;
     height: 2000px;
-    background-color: beige;
+    background-color: #00ADB5;
 }
 
 .project_info h1 {
@@ -297,7 +349,7 @@
     border-bottom: 1px solid gray;
 }
 
-.portpolios{
+.portpolios {
     margin: 0 auto;
     margin-top: 30px;
     width: 60%;
@@ -307,13 +359,13 @@
     box-shadow: 5px 5px 5px black;
 }
 
-.portpolios h2{
+.portpolios h2 {
     text-align: center;
     padding-top: 30px;
     font-size: 30px;
 }
 
-.portpolios_common{
+.portpolios_common {
     margin-top: 20px;
     width: 100%;
     height: 80%;
@@ -322,40 +374,79 @@
     justify-content: space-around;
 }
 
-.portpolios_left{
+.portpolios_left {
     width: 40%;
     height: 90%;
-    border-radius: 21px;
-}
-.portpolios_left img{
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
-.portpolios_right{
+.portpolios_left img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.carousel-item{
+    width: 100%;
+    height: 100%;
+}
+
+.portpolios_right {
     width: 40%;
     height: 90%;
     border-radius: 20px;
     padding: 10px;
 }
-.portpolios_right p{
+
+.portpolios_right p {
     margin-bottom: 20px;
     font-size: 20px;
 }
-.file_link{
+
+.file_link {
     width: 200px;
     height: 100px;
     margin-top: 100px;
 }
-.file_link thead{
+
+.file_link thead {
     width: 50%;
     height: 30px;
     background-color: aqua;
 }
-.file_link tbody{
+
+.file_link th {
+    text-align: center;
+}
+
+.file_link tbody {
     width: 50%;
     height: 30px;
     background-color: aquamarine;
     text-align: center;
+}
+
+#link1 {
+    margin: 0;
+}
+.footer{
+    width: 100%;
+    height: 200px;
+    background-color: #222831;
+}
+.footer_info{
+    color: #EEEEEE;
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 70px;
+}
+.footer_info i:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.copyright{
+    font-size: 14px;
 }
